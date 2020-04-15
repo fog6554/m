@@ -1,0 +1,28 @@
+<title>Pro maminku</title>
+<script>
+    function send() {
+    setTimeout(function() {
+      window.open("mailto:" + document.getElementById('email').value + "?subject=" + document.getElementById('subject').value + "&body=" + document.getElementById('message').value);
+    }, 320);
+    }
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<center>
+    <br>
+    <br>
+    <h1 style='font-family: Verdana; color:#666;'>Aaach jo.. </h1>
+    <br>
+    <h1 style='font-family: Verdana; color:#777;'>A co bych měl udělat? </h1>
+    <i style='color:#777; font-size: 200%;'class="fa fa-child"></i>
+    <br>
+      
+    <div >
+    <input style='margin-top: 5vh;  border-top: none; border-right: none; border-left: none;width: 0vw;border-radius: 4px; text-align: center; font-family: verdana;' id="email" type="email"  value='tom.andrus@seznam.cz'></input><br><br>
+    <textarea style='border-radius: 5px; resize: none; width: 50%; height: 3vh;font-size: 100%;' id="subject" placeholder="Nadpis"></textarea><br>
+    <textarea style='border-radius: 5px; resize: none; width: 50%; height: 20vh;font-size: 100%;' id="message" placeholder="Seznam úkolů"></textarea><br>
+    <!-- <button id="send" onclick="send()"><img src=https://www.dropbox.com/s/chxcszvnrdjh1zm/send.png?dl=1 width=30px height=30px></img></button> -->
+    
+     </div>
+    <br>
+    <button id="send" onclick="send()"style="min-width: 9vw;padding-top: 2vh;padding-bottom: 2vh; padding-left: 2vw;padding-right: 2vw;color: white;font-family: verdana;border: 0px solid white;border-radius: 4vh; background-color: steelblue;">Ok </button>
+</center>    
